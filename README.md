@@ -195,18 +195,18 @@ shlim-ai-assistant/
 Projenin çalışması için gerekli Python paketleri:
 
 ```
-fastapi
-uvicorn
-langchain
-langchain_openai
-langchain_community
-openai
-pyngrok
-python-dotenv
-chromadb
-docx2txt
-pydantic
-requests
+fastapi==0.104.1
+uvicorn==0.23.2
+langchain==0.0.311
+langchain_openai==0.0.2
+langchain_community==0.0.9
+openai==1.1.1
+pyngrok==7.0.0
+python-dotenv==1.0.0
+chromadb==0.4.18
+docx2txt==0.8
+pydantic==2.4.2
+requests==2.31.0
 ```
 
 Bu bağımlılıkları yüklemek için:
