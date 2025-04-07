@@ -13,6 +13,7 @@ Bu proje, (Hayali) Shlim AI'ın yapay zeka ajanı otomasyonu hizmetleri hakkınd
 
 - Python 3.8+
 - OpenAI API anahtarı
+- LangChain API anahtarı
 - Airtable API anahtarı
 - knowledge.docx dosyası (Shlim AI hakkında bilgiler içeren)
 
