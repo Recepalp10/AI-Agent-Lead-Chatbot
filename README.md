@@ -12,7 +12,7 @@ Bu proje, (Hayali) Shlim AI'ın yapay zeka ajanı otomasyonu hizmetleri hakkınd
 
 ## Demo Video
 Projenin çalışır halini ve temel özelliklerini görmek için aşağıdaki demo videosunu izleyebilirsiniz:
-- Demo Videosu İzle: https://drive.google.com/drive/folders/1mkTVR3tswmIOy1_Xrxqiy0XPdL7SHkM3?usp=drive_link
+- Demo Videosu : https://drive.google.com/drive/folders/1mkTVR3tswmIOy1_Xrxqiy0XPdL7SHkM3?usp=drive_link
 
 ## Gereksinimler
 
