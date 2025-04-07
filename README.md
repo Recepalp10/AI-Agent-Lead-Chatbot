@@ -24,7 +24,8 @@ Projenin çalışır halini ve temel özelliklerini görmek için aşağıdaki d
 
 ## CRM Template
 
-https://airtable.com/apph7PZRJZdsP0Skw/shrHwajwaShy0IpjH
+Reference -> Atıl Samancıoğlu : https://github.com/atilsamancioglu/ChatbotWithAssistants.git
+- https://airtable.com/apph7PZRJZdsP0Skw/shrHwajwaShy0IpjH
 
 ## Kurulum
 
