@@ -9,6 +9,11 @@ Bu proje, (Hayali) Shlim AI'ın yapay zeka ajanı otomasyonu hizmetleri hakkınd
 - Çoklu oturum desteği (thread_id ile)
 - Ngrok ile yerel geliştirme ortamını dış dünyaya açma
 
+
+## Demo Video
+Projenin çalışır halini ve temel özelliklerini görmek için aşağıdaki demo videosunu izleyebilirsiniz:
+- Demo Videosu İzle: https://drive.google.com/drive/folders/1mkTVR3tswmIOy1_Xrxqiy0XPdL7SHkM3?usp=drive_link
+
 ## Gereksinimler
 
 - Python 3.8+
