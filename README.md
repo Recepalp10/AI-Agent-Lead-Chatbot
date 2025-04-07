@@ -34,6 +34,7 @@ pip install -r requirements.txt
 3. `.env` dosyası oluşturun ve API anahtarlarınızı ekleyin:
 ```
 OPENAI_API_KEY=your_openai_api_key
+LANGCHAIN_API_KEY=your_langchain_api_key
 AIRTABLE_API_KEY=your_airtable_api_key
 PORT=8080
 ```
