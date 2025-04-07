@@ -1,0 +1,1645 @@
+{
+  "version": {
+    "_version": 13.02,
+    "autoSaveFromRestore": false,
+    "canvasTemplates": [
+      {
+        "id": "sg9zy34i0",
+        "name": "Basic Conversation Path",
+        "color": "#5b9fd7",
+        "nodeIDs": [
+          "643872d482cf9d2273b905df",
+          "643872d482cf9d2273b905e1",
+          "643872d482cf9d2273b905e3"
+        ]
+      },
+      {
+        "id": "5bgq3341p",
+        "name": "Save Information",
+        "color": "#000000",
+        "nodeIDs": [
+          "6438784f82cf9d2273b90dd4",
+          "6438784f82cf9d2273b90dd6",
+          "6438784f82cf9d2273b90dd8",
+          "6438784f82cf9d2273b90dda"
+        ]
+      },
+      {
+        "id": "byav33785",
+        "name": "API Call Example",
+        "color": null,
+        "nodeIDs": [
+          "645d718f83103cca7a3cecc1",
+          "645d718f83103cca7a3cecc3",
+          "645d718f83103cca7a3cecc5",
+          "645d718f83103cca7a3cecc7"
+        ]
+      }
+    ],
+    "components": [],
+    "creatorID": 1572614,
+    "manualSave": false,
+    "name": "Initial Version",
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "VF.YES",
+          "name": "VF.YES",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        },
+        {
+          "key": "VF.NO",
+          "name": "VF.NO",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        },
+        {
+          "key": "None",
+          "name": "None",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ]
+      },
+      "publishing": {
+        "avatar": "https://cm4-production-assets.s3.amazonaws.com/1719055059579-ac_siyah_kucuk.png",
+        "color": "#000000",
+        "description": "Eğitim ve Teknoloji danışmanlığı ile ilgili sorularınızı cevaplayabilirim",
+        "feedback": false,
+        "image": "https://cm4-production-assets.s3.amazonaws.com/1719055054458-ac_beyaz_kucuk.png",
+        "persistence": "memory",
+        "position": "right",
+        "spacing": {
+          "side": 24,
+          "bottom": 24
+        },
+        "title": "Academy Club Asistan",
+        "watermark": false,
+        "launcher": "https://cm4-production-assets.s3.amazonaws.com/1719055029915-ac_siyah_kucuk.png"
+      },
+      "platform": "webchat"
+    },
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "chatbot-lead-template",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "diagramID": "64dbb6696a8fab0013dba194",
+            "storage": {},
+            "variables": {}
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "nonDraftResponsesMap": {},
+        "responseMessagesByDiscriminatorIDMap": {},
+        "responseDiscriminatorsByResponseIDMap": {},
+        "functionDefinitions": {},
+        "referencedResponseIDs": [
+          "67f3045b1e7d820007cc11b0",
+          "67f3045b1e7d820007cc11b3",
+          "67f3045b1e7d820007cc11b6",
+          "67f3045b1e7d820007cc11b9",
+          "67f3045b1e7d820007cc11bc",
+          "67f3045b1e7d820007cc11bf"
+        ],
+        "referencedAgentsIDs": [],
+        "slotsMap": {},
+        "platform": "webchat",
+        "products": {},
+        "extraSlots": [],
+        "interfaces": [],
+        "permissions": [],
+        "projectType": "chat",
+        "extraIntents": [],
+        "usedEventsSet": [],
+        "usedIntentsSet": [],
+        "goToIntentsSet": [],
+        "entitiesMap": {},
+        "variableMap": {},
+        "intentsMap": {},
+        "requiredEntitiesMap": {},
+        "eventsMap": {},
+        "cmsVariables": {
+          "sessions": {
+            "isSystem": true,
+            "description": "The number of times a particular user has opened the app.",
+            "defaultValue": null
+          },
+          "user_id": {
+            "isSystem": true,
+            "description": "The user's unique ID.",
+            "defaultValue": null
+          },
+          "timestamp": {
+            "isSystem": true,
+            "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+            "defaultValue": null
+          },
+          "platform": {
+            "isSystem": true,
+            "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+            "defaultValue": null
+          },
+          "locale": {
+            "isSystem": true,
+            "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+            "defaultValue": null
+          },
+          "threadID": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": null,
+            "defaultValue": null
+          },
+          "intent_confidence": {
+            "isSystem": true,
+            "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+            "defaultValue": null
+          },
+          "last_response": {
+            "isSystem": true,
+            "description": "The agent's last response (text/speak) in a string.",
+            "defaultValue": null
+          },
+          "last_event": {
+            "isSystem": true,
+            "description": "The object containing the last event that the user client has triggered.",
+            "defaultValue": null
+          },
+          "last_utterance": {
+            "isSystem": true,
+            "description": "The user's last utterance in a text string.",
+            "defaultValue": null
+          },
+          "vf_memory": {
+            "isSystem": true,
+            "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+            "defaultValue": null
+          }
+        },
+        "cmsEntities": {}
+      },
+      "settings": {},
+      "platform": "webchat"
+    },
+    "settings": {
+      "widget": {
+        "type": "chat",
+        "chat": {
+          "voiceInput": true,
+          "voiceOutput": true,
+          "renderMode": "widget",
+          "headerImage": {
+            "enabled": true,
+            "url": "https://cm4-production-assets.s3.amazonaws.com/1719055054458-ac_beyaz_kucuk.png"
+          },
+          "agentImage": {
+            "enabled": true,
+            "url": "https://cm4-production-assets.s3.amazonaws.com/1719055059579-ac_siyah_kucuk.png"
+          },
+          "banner": {
+            "enabled": true,
+            "title": "Academy Club Asistan",
+            "description": "Eğitim ve Teknoloji danışmanlığı ile ilgili sorularınızı cevaplayabilirim",
+            "imageURL": "https://cm4-production-assets.s3.amazonaws.com/1719055059579-ac_siyah_kucuk.png"
+          },
+          "placeholderText": "Message...",
+          "aiDisclaimer": {
+            "enabled": true,
+            "text": "Generated by AI, double-check for accuracy."
+          },
+          "disclaimer": {
+            "enabled": false,
+            "title": "Privacy notice",
+            "description": "Before we can proceed with your conversation, we kindly ask you to review and accept our privacy policy, outlining how we handle and protect your personal information throughout our services.",
+            "primaryButtonText": "Submit",
+            "secondaryButtonText": "Privacy policy",
+            "secondaryButtonURL": ""
+          },
+          "handoffToAgentImageURL": ""
+        },
+        "voice": {
+          "renderMode": "full",
+          "content": {
+            "callToActionText": "How can I help you?",
+            "startButtonText": "Start a call",
+            "listeningText": "Listening...",
+            "talkingText": "Talk to interrupt",
+            "endButtonText": "End"
+          }
+        },
+        "common": {
+          "fontFamily": "UCity Pro",
+          "launcher": {
+            "text": "Test your agent",
+            "type": "both",
+            "imageURL": "https://cm4-production-assets.s3.amazonaws.com/1719055029915-ac_siyah_kucuk.png"
+          },
+          "poweredBy": false,
+          "footerLink": {
+            "enabled": true
+          },
+          "position": "right",
+          "sideSpacing": "24",
+          "bottomSpacing": "24",
+          "primaryColor": {
+            "color": "#000000",
+            "palette": {
+              "50": "#F2F2F2",
+              "100": "#E6E6E6",
+              "200": "#CCC",
+              "300": "#B3B3B3",
+              "400": "#999",
+              "500": "#808080",
+              "600": "#666",
+              "700": "#4D4D4D",
+              "800": "#333",
+              "900": "#1A1A1A"
+            }
+          },
+          "persistence": "memory"
+        },
+        "security": {
+          "approvedDomains": {
+            "enabled": false,
+            "domains": ""
+          },
+          "disableTranscript": false
+        }
+      },
+      "intentClassification": {
+        "type": "nlu",
+        "params": {
+          "confidence": 0.6
+        }
+      },
+      "voice": {
+        "failureMessage": "We’re sorry, but the call cannot be completed at this time. Please try again later.",
+        "hasCallRecording": false,
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_turbo_v2_5",
+          "voice": "FGY2WhTYpPnrIDTdsKH5",
+          "useCustomVoice": false,
+          "settings": {
+            "speed": 1,
+            "stability": 0.5,
+            "similarity_boost": 0.75,
+            "style": 0,
+            "speaker_boost": false
+          }
+        }
+      }
+    },
+    "topics": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "64dbb6696a8fab0013dba194"
+      }
+    ],
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "threadID",
+      "intent_confidence",
+      "last_response",
+      "last_event",
+      "last_utterance",
+      "vf_memory"
+    ],
+    "programResources": {
+      "agents": {},
+      "prompts": {},
+      "messages": {
+        "67f3045b1e7d820007cc11b0": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Hi, I'm Academy Club assistant!"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67f3045b1e7d820007cc11b3": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "I'd like to help you if you have questions about training or tech consultancy."
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67f3045b1e7d820007cc11b6": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "text": "{last_response}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67f3045b1e7d820007cc11b9": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Failed to create new thread!"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67f3045b1e7d820007cc11bc": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Failed to create generate response!"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67f3045b1e7d820007cc11bf": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "How can i help?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    "_id": "67f3045b16150ac14a568666",
+    "updatedAt": "2025-04-07T16:13:39.633Z",
+    "publishedAt": "2024-07-27T09:27:45.373Z",
+    "domains": [
+      {
+        "id": "cla06iyr900b206pkh8d4ap8n",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "64dbb6696a8fab0013dba194"
+        ],
+        "rootDiagramID": "64dbb6696a8fab0013dba194",
+        "updatedBy": 1572614,
+        "updatedAt": "2025-04-06T22:46:51.424Z"
+      }
+    ],
+    "projectID": "67f3045b16150ac14a568665",
+    "rootDiagramID": "64dbb6696a8fab0013dba194",
+    "templateDiagramID": "654f65122649dbd4c6cb7b63"
+  },
+  "diagrams": {
+    "64dbb6696a8fab0013dba195": {
+      "name": "Template Diagram",
+      "type": "TEMPLATE",
+      "zoom": 100,
+      "nodes": {},
+      "offsetX": 0,
+      "offsetY": 0,
+      "modified": 1699880727,
+      "creatorID": 1572614,
+      "variables": [],
+      "menuItems": [],
+      "_id": "67f3045b16150ac14a568668",
+      "diagramID": "64dbb6696a8fab0013dba195",
+      "versionID": "67f3045b16150ac14a568666"
+    },
+    "64dbb6696a8fab0013dba194": {
+      "name": "ROOT",
+      "type": "TOPIC",
+      "zoom": 100,
+      "nodes": {
+        "start00000000000000000000": {
+          "type": "start",
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "654f652e1b52b67850908433",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -60.86,
+                          -704.69
+                        ]
+                      },
+                      {
+                        "point": [
+                          -19.62,
+                          -704.69
+                        ]
+                      },
+                      {
+                        "point": [
+                          -19.62,
+                          -852.74
+                        ]
+                      },
+                      {
+                        "point": [
+                          21.61,
+                          -852.74
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          },
+          "nodeID": "start00000000000000000000",
+          "coords": [
+            -125.47306657576806,
+            -726.6861503347151
+          ]
+        },
+        "654f652e1b52b67850908433": {
+          "type": "api",
+          "data": {
+            "name": "",
+            "url": "https://6e8d-31-7-38-254.ngrok-free.app/start",
+            "body": [],
+            "params": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "method": "GET",
+            "headers": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "content": "",
+            "mappings": [
+              {
+                "path": "response.thread_id",
+                "var": "threadID"
+              }
+            ],
+            "bodyType": "formData",
+            "selectedAction": "Make a GET Request",
+            "selectedIntegration": "Custom API",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "654f662a1b52b6785090843e",
+                  "id": "654f652e1b52b67850908434",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          353.97,
+                          -782.33
+                        ]
+                      },
+                      {
+                        "point": [
+                          387.1,
+                          -782.33
+                        ]
+                      },
+                      {
+                        "point": [
+                          387.1,
+                          -856.4
+                        ]
+                      },
+                      {
+                        "point": [
+                          420.22,
+                          -856.4
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": "654f69041b52b6785090846a",
+                  "id": "654f652e1b52b67850908435",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          353.97,
+                          -727.84
+                        ]
+                      },
+                      {
+                        "point": [
+                          378.49,
+                          -727.84
+                        ]
+                      },
+                      {
+                        "point": [
+                          378.49,
+                          -569.09
+                        ]
+                      },
+                      {
+                        "point": [
+                          354.49,
+                          -569.09
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "654f652e1b52b67850908433"
+        },
+        "654f652e1b52b67850908436": {
+          "type": "block",
+          "data": {
+            "name": "Create Thread",
+            "steps": [
+              "654f652e1b52b67850908433"
+            ],
+            "color": "#5b9fd7"
+          },
+          "nodeID": "654f652e1b52b67850908436",
+          "coords": [
+            187.78886353485115,
+            -931.558015058844
+          ]
+        },
+        "654f662a1b52b6785090843e": {
+          "type": "message",
+          "data": {
+            "messageID": "67f3045b1e7d820007cc11b0",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "654f662a1b52b6785090843f"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "654f662a1b52b6785090843e"
+        },
+        "654f662a1b52b67850908440": {
+          "type": "block",
+          "data": {
+            "name": "Capture User Input",
+            "steps": [
+              "654f662a1b52b6785090843e",
+              "654f666e1b52b67850908447",
+              "65532e9e41512c1e831ff67a",
+              "654f66801b52b6785090844c"
+            ],
+            "color": ""
+          },
+          "nodeID": "654f662a1b52b67850908440",
+          "coords": [
+            586.4064780532453,
+            -935.2159541764237
+          ]
+        },
+        "654f666e1b52b67850908447": {
+          "type": "message",
+          "data": {
+            "messageID": "67f3045b1e7d820007cc11b3",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "654f666e1b52b67850908448"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "654f666e1b52b67850908447"
+        },
+        "654f66801b52b6785090844c": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "last_utterance"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "654f668e1b52b67850908452",
+                  "id": "654f66801b52b6785090844d",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          752.41,
+                          -629.22
+                        ]
+                      },
+                      {
+                        "point": [
+                          780.16,
+                          -629.22
+                        ]
+                      },
+                      {
+                        "point": [
+                          780.16,
+                          -858.81
+                        ]
+                      },
+                      {
+                        "point": [
+                          807.9,
+                          -858.81
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "654f66801b52b6785090844e"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "654f66801b52b6785090844c",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "654f668e1b52b67850908452": {
+          "type": "api",
+          "data": {
+            "name": "",
+            "url": "https://6e8d-31-7-38-254.ngrok-free.app/chat",
+            "body": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "params": [],
+            "method": "POST",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "val": "application/json"
+              }
+            ],
+            "content": "{\n  \"thread_id\": \"{threadID}\",\n  \"message\": \"{last_utterance}\"\n}",
+            "mappings": [
+              {
+                "path": "response.response",
+                "var": "last_response"
+              }
+            ],
+            "bodyType": "rawInput",
+            "selectedAction": "Make a POST Request",
+            "selectedIntegration": "Custom API",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "654f677f1b52b6785090845f",
+                  "id": "654f668e1b52b67850908453",
+                  "data": {}
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": "654f697f1b52b67850908475",
+                  "id": "654f668e1b52b67850908454",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1140.09,
+                          -734.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          1173.08,
+                          -734.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          1173.08,
+                          -907.7
+                        ]
+                      },
+                      {
+                        "point": [
+                          1206.06,
+                          -907.7
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "654f668e1b52b67850908452"
+        },
+        "654f668e1b52b67850908455": {
+          "type": "block",
+          "data": {
+            "name": "Generate Response",
+            "steps": [
+              "654f668e1b52b67850908452"
+            ],
+            "color": "#5b9fd7"
+          },
+          "nodeID": "654f668e1b52b67850908455",
+          "coords": [
+            973.904773786534,
+            -937.810932698057
+          ]
+        },
+        "654f677f1b52b6785090845d": {
+          "type": "message",
+          "data": {
+            "messageID": "67f3045b1e7d820007cc11b6",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "654f66801b52b6785090844c",
+                  "id": "654f677f1b52b6785090845e",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          811.28,
+                          -522.34
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          781.84,
+                          -522.34
+                        ]
+                      },
+                      {
+                        "point": [
+                          781.84,
+                          -638.22
+                        ]
+                      },
+                      {
+                        "point": [
+                          752.41,
+                          -638.22
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "654f677f1b52b6785090845d"
+        },
+        "654f677f1b52b6785090845f": {
+          "type": "block",
+          "data": {
+            "name": "Send Response",
+            "steps": [
+              "6552312841512c1e831ff625",
+              "654f677f1b52b6785090845d"
+            ],
+            "color": "#56b365"
+          },
+          "nodeID": "654f677f1b52b6785090845f",
+          "coords": [
+            977.2798613672251,
+            -661.8438511093013
+          ]
+        },
+        "654f69041b52b6785090846a": {
+          "type": "message",
+          "data": {
+            "messageID": "67f3045b1e7d820007cc11b9",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "654f69e01b52b67850908486",
+                  "id": "654f69041b52b6785090846b",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "654f69041b52b6785090846a"
+        },
+        "654f69041b52b6785090846c": {
+          "type": "block",
+          "data": {
+            "name": "API Request Failed",
+            "steps": [
+              "654f69041b52b6785090846a"
+            ],
+            "color": "#CB627B"
+          },
+          "nodeID": "654f69041b52b6785090846c",
+          "coords": [
+            188.30361928652914,
+            -647.9042670812945
+          ]
+        },
+        "654f697f1b52b67850908475": {
+          "type": "block",
+          "data": {
+            "name": "API Request Failed",
+            "color": "#CB627B",
+            "steps": [
+              "654f697f1b52b67850908477"
+            ]
+          },
+          "nodeID": "654f697f1b52b67850908475",
+          "coords": [
+            1371.064564821943,
+            -934.7001151692151
+          ]
+        },
+        "654f697f1b52b67850908477": {
+          "type": "message",
+          "data": {
+            "messageID": "67f3045b1e7d820007cc11bc",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "654f69db1b52b67850908480",
+                  "id": "654f697f1b52b67850908478",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "654f697f1b52b67850908477"
+        },
+        "654f69db1b52b6785090847f": {
+          "type": "exit",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "654f69db1b52b6785090847f"
+        },
+        "654f69db1b52b67850908480": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "654f69db1b52b6785090847f"
+            ]
+          },
+          "nodeID": "654f69db1b52b67850908480",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "654f69e01b52b67850908485": {
+          "type": "exit",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "654f69e01b52b67850908485"
+        },
+        "654f69e01b52b67850908486": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "654f69e01b52b67850908485"
+            ]
+          },
+          "nodeID": "654f69e01b52b67850908486",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6552312841512c1e831ff625": {
+          "type": "code",
+          "data": {
+            "name": "",
+            "code": "last_response = last_response.replace(/\\【.*?\\】/g, '');\n",
+            "paths": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6552312841512c1e831ff626"
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": null,
+                  "id": "6552312841512c1e831ff627"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6552312841512c1e831ff625"
+        },
+        "65532e9e41512c1e831ff67a": {
+          "type": "message",
+          "data": {
+            "messageID": "67f3045b1e7d820007cc11bf",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "65532e9e41512c1e831ff67b"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "65532e9e41512c1e831ff67a"
+        }
+      },
+      "offsetX": 660.3784532606145,
+      "offsetY": 881.3489202677721,
+      "modified": 1699880727,
+      "creatorID": 1572614,
+      "variables": [],
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ],
+      "menuNodeIDs": [],
+      "intentStepIDs": [],
+      "_id": "67f3045b16150ac14a568669",
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "versionID": "67f3045b16150ac14a568666"
+    }
+  },
+  "flows": [],
+  "entities": [],
+  "entityVariants": [],
+  "intents": [
+    {
+      "id": "VF.YES",
+      "name": "VF.YES",
+      "createdByID": 1572614,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    },
+    {
+      "id": "VF.NO",
+      "name": "VF.NO",
+      "createdByID": 1572614,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    },
+    {
+      "id": "None",
+      "name": "None",
+      "createdByID": 1572614,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    }
+  ],
+  "utterances": [],
+  "requiredEntities": [],
+  "folders": [],
+  "responses": [
+    {
+      "id": "67f3045b1e7d820007cc11b0",
+      "name": "",
+      "createdByID": 1572614,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    },
+    {
+      "id": "67f3045b1e7d820007cc11b3",
+      "name": "",
+      "createdByID": 1572614,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    },
+    {
+      "id": "67f3045b1e7d820007cc11b6",
+      "name": "",
+      "createdByID": 1572614,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    },
+    {
+      "id": "67f3045b1e7d820007cc11b9",
+      "name": "",
+      "createdByID": 1572614,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    },
+    {
+      "id": "67f3045b1e7d820007cc11bc",
+      "name": "",
+      "createdByID": 1572614,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    },
+    {
+      "id": "67f3045b1e7d820007cc11bf",
+      "name": "",
+      "createdByID": 1572614,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    }
+  ],
+  "responseMessages": [
+    {
+      "id": "67f3045b1e7d820007cc11b2",
+      "discriminatorID": "67f3045b1e7d820007cc11b1",
+      "text": [
+        {
+          "text": [
+            "Hi, I'm Shlim AI assistant!"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-04-06T22:46:51.000Z"
+    },
+    {
+      "id": "67f3045b1e7d820007cc11b5",
+      "discriminatorID": "67f3045b1e7d820007cc11b4",
+      "text": [
+        {
+          "text": [
+            "I'd like to help you if you have questions about training or tech consultancy."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-04-06T22:46:51.000Z"
+    },
+    {
+      "id": "67f3045b1e7d820007cc11b8",
+      "discriminatorID": "67f3045b1e7d820007cc11b7",
+      "text": [
+        {
+          "text": [
+            "",
+            {
+              "variableID": "last_response"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-04-06T22:46:51.000Z"
+    },
+    {
+      "id": "67f3045b1e7d820007cc11bb",
+      "discriminatorID": "67f3045b1e7d820007cc11ba",
+      "text": [
+        {
+          "text": [
+            "Failed to create new thread!"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-04-06T22:46:51.000Z"
+    },
+    {
+      "id": "67f3045b1e7d820007cc11be",
+      "discriminatorID": "67f3045b1e7d820007cc11bd",
+      "text": [
+        {
+          "text": [
+            "Failed to create generate response!"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-04-06T22:46:51.000Z"
+    },
+    {
+      "id": "67f3045b1e7d820007cc11c1",
+      "discriminatorID": "67f3045b1e7d820007cc11c0",
+      "text": [
+        {
+          "text": [
+            "How can i help?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-04-06T22:46:51.000Z"
+    }
+  ],
+  "responseDiscriminators": [
+    {
+      "id": "67f3045b1e7d820007cc11b1",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67f3045b1e7d820007cc11b0",
+      "variantOrder": [
+        "67f3045b1e7d820007cc11b2"
+      ],
+      "createdAt": "2025-04-06T22:46:51.000Z"
+    },
+    {
+      "id": "67f3045b1e7d820007cc11b4",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67f3045b1e7d820007cc11b3",
+      "variantOrder": [
+        "67f3045b1e7d820007cc11b5"
+      ],
+      "createdAt": "2025-04-06T22:46:51.000Z"
+    },
+    {
+      "id": "67f3045b1e7d820007cc11b7",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67f3045b1e7d820007cc11b6",
+      "variantOrder": [
+        "67f3045b1e7d820007cc11b8"
+      ],
+      "createdAt": "2025-04-06T22:46:51.000Z"
+    },
+    {
+      "id": "67f3045b1e7d820007cc11ba",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67f3045b1e7d820007cc11b9",
+      "variantOrder": [
+        "67f3045b1e7d820007cc11bb"
+      ],
+      "createdAt": "2025-04-06T22:46:51.000Z"
+    },
+    {
+      "id": "67f3045b1e7d820007cc11bd",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67f3045b1e7d820007cc11bc",
+      "variantOrder": [
+        "67f3045b1e7d820007cc11be"
+      ],
+      "createdAt": "2025-04-06T22:46:51.000Z"
+    },
+    {
+      "id": "67f3045b1e7d820007cc11c0",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67f3045b1e7d820007cc11bf",
+      "variantOrder": [
+        "67f3045b1e7d820007cc11c1"
+      ],
+      "createdAt": "2025-04-06T22:46:51.000Z"
+    }
+  ],
+  "variables": [
+    {
+      "id": "sessions",
+      "name": "sessions",
+      "createdByID": 1572614,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The number of times a particular user has opened the app.",
+      "defaultValue": null,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    },
+    {
+      "id": "user_id",
+      "name": "user_id",
+      "createdByID": 1572614,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's unique ID.",
+      "defaultValue": null,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    },
+    {
+      "id": "timestamp",
+      "name": "timestamp",
+      "createdByID": 1572614,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+      "defaultValue": null,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    },
+    {
+      "id": "platform",
+      "name": "platform",
+      "createdByID": 1572614,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+      "defaultValue": null,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    },
+    {
+      "id": "locale",
+      "name": "locale",
+      "createdByID": 1572614,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+      "defaultValue": null,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    },
+    {
+      "id": "threadID",
+      "name": "threadID",
+      "createdByID": 1572614,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": null,
+      "defaultValue": null,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    },
+    {
+      "id": "intent_confidence",
+      "name": "intent_confidence",
+      "createdByID": 1572614,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+      "defaultValue": null,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    },
+    {
+      "id": "last_response",
+      "name": "last_response",
+      "createdByID": 1572614,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The agent's last response (text/speak) in a string.",
+      "defaultValue": null,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    },
+    {
+      "id": "last_event",
+      "name": "last_event",
+      "createdByID": 1572614,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "any",
+      "description": "The object containing the last event that the user client has triggered.",
+      "defaultValue": null,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    },
+    {
+      "id": "last_utterance",
+      "name": "last_utterance",
+      "createdByID": 1572614,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's last utterance in a text string.",
+      "defaultValue": null,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    },
+    {
+      "id": "vf_memory",
+      "name": "vf_memory",
+      "createdByID": 1572614,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+      "defaultValue": null,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-06T22:46:51.000Z",
+      "updatedByID": 1572614
+    }
+  ],
+  "workflows": [
+    {
+      "id": "666ed4caa9ab6b00075e68a0",
+      "name": "Home",
+      "createdByID": 1572614,
+      "folderID": null,
+      "status": null,
+      "isStart": true,
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "assigneeID": null,
+      "description": null,
+      "createdAt": "2025-04-06T22:46:51.000Z",
+      "updatedAt": "2025-04-07T16:14:31.000Z",
+      "updatedByID": 1572614
+    }
+  ],
+  "attachments": [],
+  "cardButtons": [],
+  "prompts": [],
+  "promptMessages": [],
+  "events": [],
+  "agents": [],
+  "agentPathTools": [],
+  "agentFunctionTools": [],
+  "agentPathToolVariables": [],
+  "functions": [],
+  "functionPaths": [],
+  "functionVariables": [],
+  "project": {
+    "type": "chat",
+    "name": "chatbot-lead-template",
+    "image": "",
+    "teamID": "Kljx05QYjN",
+    "members": [],
+    "privacy": "private",
+    "platform": "webchat",
+    "_version": 1.2,
+    "linkType": "STRAIGHT",
+    "creatorID": 1572614,
+    "updatedBy": 1572614,
+    "apiPrivacy": "private",
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "customThemes": [],
+    "aiAssistSettings": {
+      "aiPlayground": true
+    },
+    "_id": "67f3045b16150ac14a568665",
+    "updatedAt": "2025-04-06T23:06:56.204Z",
+    "devVersion": "67f3045b16150ac14a568666",
+    "liveVersion": "67f3045b16150ac14a568667"
+  },
+  "_version": "1.2",
+  "secrets": [],
+  "variableStates": []
+}
