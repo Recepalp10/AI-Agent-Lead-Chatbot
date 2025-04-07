@@ -20,8 +20,8 @@ Bu proje, (Hayali) Shlim AI'ın yapay zeka ajanı otomasyonu hizmetleri hakkınd
 
 1. Repo'yu klonlayın:
 ```bash
-git clone https://github.com/your-username/shlim-ai-assistant.git
-cd shlim-ai-assistant
+git clone https://github.com/Recepalp10/AI-Agent-Lead-Chatbot.git
+cd AI-Agent-Lead-Chatbot
 ```
 
 2. Sanal ortam oluşturun ve bağımlılıkları yükleyin:
@@ -34,6 +34,7 @@ pip install -r requirements.txt
 3. `.env` dosyası oluşturun ve API anahtarlarınızı ekleyin:
 ```
 OPENAI_API_KEY=your_openai_api_key
+LANGCHAIN_API_KEY=your_langchain_api_key
 AIRTABLE_API_KEY=your_airtable_api_key
 PORT=8080
 ```
