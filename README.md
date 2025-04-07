@@ -225,7 +225,7 @@ pip install -r requirements.txt
 
 ## Lisans
 
-[MIT](LICENSE)
+[MIT](LICENSE.txt)
 
 ## İletişim
 
