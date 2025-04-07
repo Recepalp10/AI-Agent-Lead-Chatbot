@@ -21,6 +21,11 @@ Projenin çalışır halini ve temel özelliklerini görmek için aşağıdaki d
 - Airtable API anahtarı
 - knowledge.docx dosyası (Shlim AI hakkında bilgiler içeren)
 
+
+## CRM Template
+
+https://airtable.com/apph7PZRJZdsP0Skw/shrHwajwaShy0IpjH
+
 ## Kurulum
 
 1. Repo'yu klonlayın:
