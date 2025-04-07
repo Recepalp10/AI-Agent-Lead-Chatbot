@@ -181,4 +181,4 @@ pip install -r requirements.txt
 
 ## İletişim
 
-Projeyle ilgili sorularınız için [e-posta adresiniz] adresine e-posta gönderebilirsiniz.
+Projeyle ilgili sorularınız için srecepalp@gmail.com adresine e-posta gönderebilirsiniz.
