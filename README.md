@@ -18,6 +18,7 @@ Projenin çalışır halini ve temel özelliklerini görmek için aşağıdaki d
 
 - Python 3.8+
 - OpenAI API anahtarı
+- LangChain API anahtarı
 - Airtable API anahtarı
 - knowledge.docx dosyası (Shlim AI hakkında bilgiler içeren)
 
