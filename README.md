@@ -4,7 +4,7 @@ Bu proje, (Gerçek olmayan) Shlim AI'ın yapay zeka ajanı otomasyonu hizmetleri
 
 ## Özellikler
 
-- Shlim AI hakkında bilgi sağlama (knowledge.docx dosyasından)
+- (Gerçek olmayan) Shlim AI hakkında bilgi sağlama (knowledge.docx dosyasından)
 - Müşteri adaylarını (lead) Airtable CRM'e kaydetme
 - Çoklu oturum desteği (thread_id ile)
 - Ngrok ile yerel geliştirme ortamını dış dünyaya açma
