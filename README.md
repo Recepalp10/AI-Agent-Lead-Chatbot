@@ -1,6 +1,6 @@
 # Shlim AI Agent-Lead-Chatbot
 
-Bu proje, (Gerçek olmayan) Shlim AI'ın yapay zeka ajanı otomasyonu hizmetleri hakkında bilgi sağlayan ve müşteri adaylarını kaydeden bir asistan API'sidir. FastAPI, LangChain ve OpenAI kullanılarak geliştirilmiştir.
+Bu proje, (Gerçek olmayan) Shlim AI firmasının yapay zeka ajanı otomasyonu hizmetleri hakkında bilgi sağlayan ve müşteri adaylarını kaydeden bir asistan API'sidir. FastAPI, LangChain ve OpenAI kullanılarak geliştirilmiştir.
 
 ## Özellikler
 
