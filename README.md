@@ -53,7 +53,7 @@ PORT=8080
 
 4. `knowledge.docx` dosyasını proje ana dizinine yerleştirin. Bu dosya, Shlim AI hakkında bilgi içermelidir.
 
-## Ngrok Kurulumu
+## Ngrok Kurulumu (Opsiyonel)
 
 Proje, pyngrok kütüphanesini kullanarak otomatik olarak ngrok tüneli oluşturur. Ek bir kurulum gerekmez, ancak ngrok hesabınız varsa ve auth token kullanmak istiyorsanız:
 
